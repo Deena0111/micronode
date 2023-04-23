@@ -4,8 +4,8 @@ const proxy = require('express-http-proxy')
 const bodyParser = require('body-parser')
 const port=30000
 // Define the URL paths for each microservice
-const adminServiceUrl = 'http://localhost:10000';
-const userSeviceUrl = 'http://localhost:20000';
+const adminServiceUrl = 'https://admin-i38t.onrender.com';
+const userSeviceUrl = 'https://user-ncij.onrender.com';
 // Define the routes for the API Gateway
 app.use(bodyParser.json());
 app.listen(port,()=>{
