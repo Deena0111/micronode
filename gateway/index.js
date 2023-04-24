@@ -17,6 +17,9 @@ app.use('/admin', proxy(adminServiceUrl));
 // Proxy requests to the user microservice
 app.use('/user', proxy(userSeviceUrl));
 
+app.get('/',(req,res)=>{
+    res.send("This is microservices sample test")
+})
 app.get('/gateway',(req,res)=>{
-    res.send("hello gateway")
+    res.send("Hello gateway")
 })
